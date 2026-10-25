@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Special Gift for Vruti 💜</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Local Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Prefers Reduced Motion: hint for CSS/JS -->
+  <meta name="color-scheme" content="dark">
+</head>
+<body>
+
+  <!-- ============================================= -->
+  <!-- Background Particles Container                -->
+  <!-- ============================================= -->
+  <div id="particles-bg" class="particles-bg"></div>
+
+  <!-- ============================================= -->
+  <!-- 1. Welcome Screen (Full-Screen Overlay)       -->
+  <!-- ============================================= -->
+  <div id="welcome-screen">
+    <!-- Animated floating stars -->
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+
+    <!-- Animated Heart -->
+    <div class="welcome-heart"></div>
+
+    <h1>Hey, Vruti Poojara! 💜</h1>
+    <p>I made something special just for you...</p>
+    <button id="open-surprise-btn" class="glow-btn">Open Your Surprise ✨</button>
+  </div>
+
+  <!-- ============================================= -->
+  <!-- 2. Navigation                                 -->
+  <!-- ============================================= -->
+  <nav id="navbar">
+    <div class="nav-brand">For Vruti 💜</div>
+    <button id="hamburger" class="hamburger" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#special">Why You're Special</a></li>
+      <li><a href="#letter">My Letter</a></li>
+      <li><a href="#memories">Memories</a></li>
+      <li><a href="#surprise">Surprise Gift</a></li>
+      <li><a href="#wishes">Wishes</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============================================= -->
+  <!-- 3. Hero Section                               -->
+  <!-- ============================================= -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Some People Make Life More Beautiful.</h1>
+      <h2 class="hero-subtitle">And you're one of those people, Vruti. 💜</h2>
+      <p class="hero-message">This little corner of the internet is made especially for you — to say thank you for your kindness, your guidance, your support, and the wonderful friend you are.</p>
+
+      <div class="hero-photo-frame">
+        <img id="hero-photo" src="assets/images/vruti-main.jpg" alt="Vruti Poojara" onerror="this.src=''; this.alt='Photo coming soon 📸'; this.classList.add('img-placeholder')">
+        <p class="photo-caption">Vruti Poojara 💜</p>
+      </div>
+
+      <!-- Glowing animated heart -->
+      <div class="floating-heart-hero"></div>
+
+      <button class="scroll-btn" onclick="document.getElementById('special').scrollIntoView({ behavior: 'smooth' })">Discover Your Surprise ↓</button>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 4. Why You're Special Section                 -->
+  <!-- ============================================= -->
+  <section id="special" class="section">
+    <h2>Why You Are Special 💫</h2>
+    <div class="cards-grid">
+
+      <div class="special-card reveal-on-scroll" data-icon="💫">
+        <h3>My Guide 💫</h3>
+        <p>Thank you for guiding me whenever I feel confused and helping me understand things better.</p>
+      </div>
+
+      <div class="special-card reveal-on-scroll" data-icon="💜">
+        <h3>My Support System 💜</h3>
+        <p>Your willingness to help me means more than you probably realize.</p>
+      </div>
+
+      <div class="special-card reveal-on-scroll" data-icon="📚">
+        <h3>My Knowledge Buddy 📚</h3>
+        <p>Thank you for sharing your knowledge and helping me learn new things.</p>
+      </div>
+
+      <div class="special-card reveal-on-scroll" data-icon="🌷">
+        <h3>A Wonderful Friend 🌷</h3>
+        <p>I'm grateful to have a friend who is so supportive and kind.</p>
+      </div>
+
+      <div class="special-card reveal-on-scroll" data-icon="🎓">
+        <h3>My MCA Journey Partner 🎓</h3>
+        <p>I'm glad we became classmates at Marwadi University and got the chance to share this journey.</p>
+      </div>
+
+      <div class="special-card reveal-on-scroll" data-icon="✨">
+        <h3>Someone I Truly Appreciate ✨</h3>
+        <p>Sometimes, small acts of kindness make a huge difference. Thank you for being there for me.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 5. Letter Section                             -->
+  <!-- ============================================= -->
+  <section id="letter" class="section">
+    <h2>A Little Letter for You 💌</h2>
+
+    <div class="envelope-container">
+      <div class="envelope" id="envelope">
+        <div class="envelope-flap"></div>
+        <div class="envelope-body"></div>
+      </div>
+      <button id="open-letter-btn" class="glow-btn">Open My Letter 💌</button>
+    </div>
+
+    <div class="letter-content" id="letter-content" style="display: none;">
+      <div class="letter-paper">
+        <!-- ✏️ EDIT YOUR LETTER BELOW -->
+        <p class="letter-greeting">Dear Vruti,</p>
+        <p>I don't think I say this enough, but I'm genuinely thankful to have you in my life.</p>
+        <p>You're not just my classmate; you're someone who helps me, guides me, shares your knowledge, and supports me whenever I need help.</p>
+        <p>Sometimes, even a little help or a simple explanation can make a big difference. I truly appreciate the time, patience, and effort you give me.</p>
+        <p>I'm really glad we became classmates during our MCA journey at Marwadi University. Having someone like you who is always willing to help and guide me is something I never want to take for granted.</p>
+        <p>I hope you achieve all your dreams, find amazing opportunities, and always have reasons to smile.</p>
+        <p>This little website is my way of saying something I may not say often enough:</p>
+        <p class="letter-highlight">THANK YOU FOR EVERYTHING, VRUTI. 💜</p>
+        <p>Keep smiling, keep growing, and keep shining.</p>
+        <p>You're a wonderful friend, and I'm truly grateful for you.</p>
+        <p class="letter-signature">With lots of appreciation, gratitude, and friendship. ❤️</p>
+        <!-- ✏️ END OF LETTER -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 6. Memories Gallery                           -->
+  <!-- ============================================= -->
+  <section id="memories" class="section">
+    <h2>Little Moments, Beautiful Memories 📸</h2>
+    <div class="gallery-grid">
+
+      <div class="gallery-card reveal-on-scroll">
+        <div class="gallery-img-wrapper">
+          <img src="assets/images/memory-1.jpg" alt="Our College Memories" class="gallery-img" data-full="assets/images/memory-1.jpg" loading="lazy" onerror="this.src=''; this.alt='Photo coming soon 📸'; this.classList.add('img-placeholder')">
+        </div>
+        <p class="gallery-caption">Our College Memories</p>
+      </div>
+
+      <div class="gallery-card reveal-on-scroll">
+        <div class="gallery-img-wrapper">
+          <img src="assets/images/memory-2.jpg" alt="Our MCA Journey" class="gallery-img" data-full="assets/images/memory-2.jpg" loading="lazy" onerror="this.src=''; this.alt='Photo coming soon 📸'; this.classList.add('img-placeholder')">
+        </div>
+        <p class="gallery-caption">Our MCA Journey</p>
+      </div>
+
+      <div class="gallery-card reveal-on-scroll">
+        <div class="gallery-img-wrapper">
+          <img src="assets/images/memory-3.jpg" alt="Fun Moments Together" class="gallery-img" data-full="assets/images/memory-3.jpg" loading="lazy" onerror="this.src=''; this.alt='Photo coming soon 📸'; this.classList.add('img-placeholder')">
+        </div>
+        <p class="gallery-caption">Fun Moments Together</p>
+      </div>
+
+      <div class="gallery-card reveal-on-scroll">
+        <div class="gallery-img-wrapper">
+          <img src="assets/images/memory-4.jpg" alt="Memories I'll Always Treasure" class="gallery-img" data-full="assets/images/memory-4.jpg" loading="lazy" onerror="this.src=''; this.alt='Photo coming soon 📸'; this.classList.add('img-placeholder')">
+        </div>
+        <p class="gallery-caption">Memories I'll Always Treasure</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 7. Lightbox                                   -->
+  <!-- ============================================= -->
+  <div id="lightbox">
+    <div class="lightbox-overlay">
+      <button class="lightbox-close" id="lightbox-close">×</button>
+      <img id="lightbox-img" src="" alt="Enlarged photo">
+    </div>
+  </div>
+
+  <!-- ============================================= -->
+  <!-- 8. Surprise Gift Section                      -->
+  <!-- ============================================= -->
+  <section id="surprise" class="section">
+    <h2>One Little Surprise Just for You... 🎁</h2>
+
+    <div class="gift-container" id="gift-container">
+      <div class="gift-box" id="gift-box">
+        <div class="gift-lid">
+          <div class="gift-ribbon-bow"></div>
+        </div>
+        <div class="gift-base">
+          <div class="gift-ribbon-vertical"></div>
+        </div>
+      </div>
+      <button id="open-gift-btn" class="glow-btn">Open Your Gift 🎁</button>
+    </div>
+
+    <div class="gift-message" id="gift-message" style="display: none;">
+      <div class="gift-message-card">
+        <p>Vruti, thank you for being the person who helps me, guides me, and makes my journey a little easier. Your kindness and support mean so much to me. I hope life brings you endless happiness, beautiful opportunities, success, and all the things your heart wishes for. Never stop smiling and never stop shining! 💜✨</p>
+        <p class="gift-final-line">You deserve all the beautiful things life has to offer.</p>
+      </div>
+      <button id="replay-gift-btn" class="glow-btn">Replay Surprise 🎁</button>
+    </div>
+
+    <div id="confetti-container"></div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 9. Quiz Section                               -->
+  <!-- ============================================= -->
+  <section id="quiz" class="section">
+    <h2>How Well Do You Know Our Friendship? 😄</h2>
+    <div class="quiz-container" id="quiz-container">
+      <div class="quiz-question" id="quiz-question">
+        <p id="quiz-q-text"></p>
+        <div id="quiz-options" class="quiz-options"></div>
+      </div>
+      <div id="quiz-feedback" class="quiz-feedback"></div>
+      <div id="quiz-result" class="quiz-result" style="display: none;"></div>
+      <button id="quiz-next-btn" class="glow-btn" style="display: none;">Next Question →</button>
+      <button id="quiz-replay-btn" class="glow-btn" style="display: none;">Play Again 🔄</button>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 10. Wishes Section                            -->
+  <!-- ============================================= -->
+  <section id="wishes" class="section">
+    <h2>Little Wishes for Your Beautiful Future ✨</h2>
+    <ul class="wishes-list">
+      <li class="wish-item reveal-on-scroll">
+        <span class="wish-star">⭐</span> May all your dreams come true.
+      </li>
+      <li class="wish-item reveal-on-scroll">
+        <span class="wish-star">✨</span> May your hard work bring you wonderful opportunities.
+      </li>
+      <li class="wish-item reveal-on-scroll">
+        <span class="wish-star">⭐</span> May you always have reasons to smile.
+      </li>
+      <li class="wish-item reveal-on-scroll">
+        <span class="wish-star">✨</span> May you be surrounded by kind and supportive people.
+      </li>
+      <li class="wish-item reveal-on-scroll">
+        <span class="wish-star">⭐</span> May you always believe in yourself.
+      </li>
+      <li class="wish-item reveal-on-scroll">
+        <span class="wish-star">✨</span> May happiness and success follow you wherever you go.
+      </li>
+      <li class="wish-item reveal-on-scroll">
+        <span class="wish-star">⭐</span> May our friendship continue to grow.
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 11. Final Section                             -->
+  <!-- ============================================= -->
+  <section id="final" class="section">
+    <div class="final-content">
+      <h2>Hey Vruti, one last thing... 💜</h2>
+      <p class="final-highlight">Thank you for being YOU.</p>
+      <p>Thank you for helping me, guiding me, and making my journey a little easier. This website may be small, but the appreciation behind it is genuine.</p>
+      <p>Keep smiling. Keep shining. And always remember that you are appreciated. 💜</p>
+      <div class="final-heart"></div>
+      <button class="glow-btn" id="back-to-top-btn">Back to the Beginning ↑</button>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 12. Footer                                    -->
+  <!-- ============================================= -->
+  <footer id="footer">
+    <p>Made with 💜, gratitude, and friendship — especially for Vruti Poojara.</p>
+  </footer>
+
+  <!-- ============================================= -->
+  <!-- 13. Back to Top Floating Button               -->
+  <!-- ============================================= -->
+  <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Back to top">↑</button>
+
+  <!-- Local Script -->
+  <script src="script.js"></script>
+</body>
+</html>
